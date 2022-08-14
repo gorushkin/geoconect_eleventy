@@ -30,13 +30,13 @@
 
   <body>
     <main class="main">
-      {% include "./partials/header.html" %}
+      {% include "./partials/header.njk" %}
 
       {{content | safe}}
 
-      {% include "./partials/footer.html" %}
+      {% include "./partials/footer.njk" %}
     </main>
-    {% include "./partials/script.html" %}
+    {% include "./partials/script.njk" %}
   </body>
 
 </html>
