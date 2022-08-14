@@ -1,3 +1,13 @@
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on('init', (user) => {
+    if (!user) {
+      window.netlifyIdentity.on('login', () => {
+        document.location.href = '/admin/';
+      });
+    }
+  });
+}
+
 const elements = {
   menu: document.querySelector('.js__menu'),
   btn: document.querySelector('.js__btn'),

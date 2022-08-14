@@ -1,0 +1,15 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: '_site/img/news'
+public_folder: '/img/news'
+collections:
+  - name: 'news'
+    label: 'News'
+    folder: 'src/news'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'img', widget: 'Image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
