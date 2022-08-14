@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/admin');
 
   // Watch the `css` directory for changes
-  eleventyConfig.addWatchTarget('./src/css');
+  eleventyConfig.addWatchTarget('./src/scss');
 
   eleventyConfig.addFilter('readableDate', (dateObj) => {
     return dateObj;
