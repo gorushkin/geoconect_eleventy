@@ -16,7 +16,7 @@
             <h3 class="news__item-title">
               {{news.data.title}}
             </h3>
-            {{ news.data.content | safe }}
+            {{ news.templateContent | safe }}
           </div>
         </li>
       {% endfor %}
